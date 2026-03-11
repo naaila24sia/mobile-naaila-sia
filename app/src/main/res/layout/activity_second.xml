@@ -56,7 +56,7 @@
         android:background="@android:drawable/edit_text"
         android:backgroundTint="#FFFFFF"
         android:elevation="2dp"
-        android:hint="Ketik nama di sini..."
+        android:hint="Masukkan Nama..."
         android:inputType="textPersonName"
         android:paddingStart="20dp"
         android:textColor="#37474F"
