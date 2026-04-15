@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Cari Berita"
+        app:showAsAction="ifRoom"
+        app:iconTint="@android:color/white" />
+
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Bagikan"
+        app:showAsAction="ifRoom"
+        app:iconTint="@android:color/white" />
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="Tentang Aplikasi"
+        app:showAsAction="never" />
+</menu>
