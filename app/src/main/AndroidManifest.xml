@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NaailaApps">
         <activity
+            android:name=".pertemuan_5.FifthActivity"
+            android:exported="false" />
+        <activity
             android:name=".pertemuan_5.WebViewActivity"
             android:exported="false" />
         <activity
@@ -27,9 +30,9 @@
             android:exported="false" />
         <activity
             android:name=".pertemuan_3.ThirdActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
-            android:name=".pertemuan_5.FifthActivity"
+            android:name=".AuthActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
