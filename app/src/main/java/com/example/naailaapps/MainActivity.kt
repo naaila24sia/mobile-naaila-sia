@@ -2,13 +2,16 @@ package com.example.naailaapps
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.naailaapps.databinding.ActivityMainBinding
+import com.example.naailaapps.pertemuan_2.SecondActivity
+import com.example.naailaapps.pertemuan_3.ThirdActivity
 import com.example.naailaapps.pertemuan_4.FourthActivity
+import com.example.naailaapps.pertemuan_5.FifthActivity
+import com.example.naailaapps.pertemuan_7.SeventhActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {
@@ -40,6 +43,29 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnToSecond.setOnClickListener{
+            val intent = Intent(this, SecondActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        binding.btnToThird.setOnClickListener{
+            val intent = Intent(this, ThirdActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        binding.btnToFifth.setOnClickListener{
+            val intent = Intent(this, FifthActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        binding.btnToSeven.setOnClickListener{
+            val intent = Intent(this, SeventhActivity::class.java)
+
+            startActivity(intent)
+        }
         binding.btnLogout.setOnClickListener {
 
             MaterialAlertDialogBuilder(this)
