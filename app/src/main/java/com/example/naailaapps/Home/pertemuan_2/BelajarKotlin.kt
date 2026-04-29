@@ -1,4 +1,4 @@
-package com.example.naailaapps.pertemuan_2
+package com.example.naailaapps.Home.pertemuan_2
 
 fun main(){
     println("Hai rekan rekan...")

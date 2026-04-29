@@ -1,4 +1,4 @@
-package com.example.naailaapps.pertemuan_7
+package com.example.naailaapps.Home.pertemuan_7
 
 import android.os.Bundle
 import android.view.MenuItem

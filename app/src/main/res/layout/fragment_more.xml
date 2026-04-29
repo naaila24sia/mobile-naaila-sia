@@ -3,16 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#87C6E4"
-    tools:context=".Home.pertemuan_7.DuaFragment">
+    tools:context=".More.MoreFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Ini Fragment 2"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:text="Fragment More"
+        android:textSize="32sp"/>
 
 </FrameLayout>
