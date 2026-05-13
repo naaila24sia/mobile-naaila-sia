@@ -6,29 +6,41 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
     tools:context=".Home.HomeFragment">
+
+    <View
+        android:id="@+id/background_header"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_header_setengah_lingkaran"
+        android:backgroundTint="#6200EE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:layout_marginStart="32dp"
         android:text="Selamat Datang!"
-        android:textColor="#333333"
-        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/menuGrid"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginHorizontal="24dp"
+        app:columnCount="1"
         app:layout_constraintBottom_toTopOf="@id/btnLogout"
-        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/background_header"
         app:layout_constraintVertical_bias="0.3">
 
         <Button
@@ -75,27 +87,36 @@
             android:id="@+id/btnToSeven"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginBottom="12dp"
             android:backgroundTint="#6200EE"
             android:text="Pertemuan 7"
             android:textAllCaps="false"
             app:cornerRadius="12dp" />
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/btnToNinth"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#6200EE"
+            android:text="Pertemuan 9"
+            android:textAllCaps="false"
+            app:cornerRadius="12dp" />
+
+    </androidx.gridlayout.widget.GridLayout>
 
     <Button
         android:id="@+id/btnLogout"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="55dp"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
         android:text="Logout"
         android:textColor="#D32F2F"
         app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="#D32F2F" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
