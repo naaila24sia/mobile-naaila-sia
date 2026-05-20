@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.naailaapps.AuthActivity
+import com.example.naailaapps.Home.pertemuan_10.TenthActivity
 import com.example.naailaapps.Home.pertemuan_2.SecondActivity
 import com.example.naailaapps.Home.pertemuan_3.ThirdActivity
 import com.example.naailaapps.Home.pertemuan_4.FourthActivity
@@ -75,6 +76,13 @@ class HomeFragment : Fragment() {
 
             startActivity(intent)
         }
+
+        binding.btnToTenth.setOnClickListener{
+            val intent = Intent(requireContext(), TenthActivity::class.java)
+
+            startActivity(intent)
+        }
+
         binding.btnLogout.setOnClickListener {
 
             MaterialAlertDialogBuilder(requireContext())
