@@ -8,111 +8,145 @@
     android:layout_height="match_parent"
     tools:context=".Home.HomeFragment">
 
-    <View
-        android:id="@+id/background_header"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
-        android:layout_height="180dp"
-        android:background="@drawable/bg_header_setengah_lingkaran"
-        android:backgroundTint="#6200EE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvWelcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="Selamat Datang!"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/menuGrid"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        app:columnCount="1"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@id/btnLogout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/background_header"
-        app:layout_constraintVertical_bias="0.3">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/btnToSecond"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginBottom="12dp"
-            android:backgroundTint="#6200EE"
-            android:text="Pertemuan 2"
-            android:textAllCaps="false"
-            app:cornerRadius="12dp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnToThird"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginBottom="12dp"
-            android:backgroundTint="#6200EE"
-            android:text="Pertemuan 3"
-            android:textAllCaps="false"
-            app:cornerRadius="12dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/btnToFourth"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginBottom="12dp"
-            android:backgroundTint="#6200EE"
-            android:text="Pertemuan 4"
-            android:textAllCaps="false"
-            app:cornerRadius="12dp" />
+                <View
+                    android:id="@+id/background_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/bg_header_setengah_lingkaran"
+                    android:backgroundTint="#6200EE" />
 
-        <Button
-            android:id="@+id/btnToFifth"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginBottom="12dp"
-            android:backgroundTint="#6200EE"
-            android:text="Pertemuan 5"
-            android:textAllCaps="false"
-            app:cornerRadius="12dp" />
+                <TextView
+                    android:id="@+id/tvWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:text="Selamat Datang!"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
-        <Button
-            android:id="@+id/btnToSeven"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginBottom="12dp"
-            android:backgroundTint="#6200EE"
-            android:text="Pertemuan 7"
-            android:textAllCaps="false"
-            app:cornerRadius="12dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
 
-        <Button
-            android:id="@+id/btnToNinth"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginBottom="12dp"
-            android:backgroundTint="#6200EE"
-            android:text="Pertemuan 9"
-            android:textAllCaps="false"
-            app:cornerRadius="12dp" />
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/menuGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                app:columnCount="2"
+                app:useDefaultMargins="true">
 
-        <Button
-            android:id="@+id/btnToTenth"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:backgroundTint="#6200EE"
-            android:text="Pertemuan 10"
-            android:textAllCaps="false"
-            app:cornerRadius="12dp" />
+                <Button
+                    android:id="@+id/btnToSecond"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    app:layout_columnWeight="1"
+                    android:layout_marginBottom="4dp"
+                    android:backgroundTint="#6200EE"
+                    android:text="Pertemuan 2"
+                    android:textAllCaps="false"
+                    app:cornerRadius="12dp" />
 
-    </androidx.gridlayout.widget.GridLayout>
+                <Button
+                    android:id="@+id/btnToThird"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    app:layout_columnWeight="1"
+                    android:layout_marginBottom="4dp"
+                    android:backgroundTint="#6200EE"
+                    android:text="Pertemuan 3"
+                    android:textAllCaps="false"
+                    app:cornerRadius="12dp" />
+
+                <Button
+                    android:id="@+id/btnToFourth"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    app:layout_columnWeight="1"
+                    android:layout_marginBottom="4dp"
+                    android:backgroundTint="#6200EE"
+                    android:text="Pertemuan 4"
+                    android:textAllCaps="false"
+                    app:cornerRadius="12dp" />
+
+                <Button
+                    android:id="@+id/btnToFifth"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    app:layout_columnWeight="1"
+                    android:layout_marginBottom="4dp"
+                    android:backgroundTint="#6200EE"
+                    android:text="Pertemuan 5"
+                    android:textAllCaps="false"
+                    app:cornerRadius="12dp" />
+
+                <Button
+                    android:id="@+id/btnToSeven"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    app:layout_columnWeight="1"
+                    android:layout_marginBottom="4dp"
+                    android:backgroundTint="#6200EE"
+                    android:text="Pertemuan 7"
+                    android:textAllCaps="false"
+                    app:cornerRadius="12dp" />
+
+                <Button
+                    android:id="@+id/btnToNinth"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    app:layout_columnWeight="1"
+                    android:layout_marginBottom="4dp"
+                    android:backgroundTint="#6200EE"
+                    android:text="Pertemuan 9"
+                    android:textAllCaps="false"
+                    app:cornerRadius="12dp" />
+
+                <Button
+                    android:id="@+id/btnToTenth"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    app:layout_columnWeight="1"
+                    android:backgroundTint="#6200EE"
+                    android:text="Pertemuan 10"
+                    android:textAllCaps="false"
+                    app:cornerRadius="12dp" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:nestedScrollingEnabled="false"
+                android:padding="8dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
     <Button
         android:id="@+id/btnLogout"
