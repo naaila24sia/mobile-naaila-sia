@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.naailaapps.AuthActivity
 import com.example.naailaapps.Data.api.PhotoApiClient
 import com.example.naailaapps.Home.pertemuan_10.TenthActivity
+import com.example.naailaapps.Home.pertemuan_13.ThirteenthActivity
 import com.example.naailaapps.Home.pertemuan_2.SecondActivity
 import com.example.naailaapps.Home.pertemuan_3.ThirdActivity
 import com.example.naailaapps.Home.pertemuan_4.FourthActivity
@@ -85,6 +86,12 @@ class HomeFragment : Fragment() {
 
         binding.btnToTenth.setOnClickListener{
             val intent = Intent(requireContext(), TenthActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        binding.btnToThirteenth.setOnClickListener{
+            val intent = Intent(requireContext(), ThirteenthActivity::class.java)
 
             startActivity(intent)
         }

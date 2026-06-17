@@ -133,6 +133,16 @@
                     android:textAllCaps="false"
                     app:cornerRadius="12dp" />
 
+                <Button
+                    android:id="@+id/btnToThirteenth"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    app:layout_columnWeight="1"
+                    android:backgroundTint="#6200EE"
+                    android:text="Pertemuan 13"
+                    android:textAllCaps="false"
+                    app:cornerRadius="12dp" />
+
             </androidx.gridlayout.widget.GridLayout>
 
             <androidx.recyclerview.widget.RecyclerView
